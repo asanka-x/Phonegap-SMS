@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+            id="org.apache.cordova.plugin.SmsPlugin" version="0.1.0">
+        <name>SMSPlugin</name>
+        <description>Cordova SMS Plugin to Send and Receive SMS</description>
+        <license>MIT</license>
+        <keywords>cordova,sms</keywords>
+        <js-module src="www/smsplugin.js" name="smsplugin">
+            <clobbers target="smsplugin" />
+        </js-module>
+
+		<platform name="android">
+			<config-file target="res/xml/config.xml" parent="/*">
+				<feature name="SMSPlugin">
+					<param name="android-package" value="org.apache.cordova.plugin.SmsPlugin" />
+				</feature>
+			</config-file>
+			<source-file src="src/android/org/apache/cordova/plugin/SmsPlugin.java" target-dir="src/org/apache/cordova/plugin"/>
+		</platform>
+    </plugin>
