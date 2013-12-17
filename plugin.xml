@@ -15,6 +15,11 @@
 					<param name="android-package" value="org.apache.cordova.plugin.SmsPlugin" />
 				</feature>
 			</config-file>
+			<config-file target="AndroidManifest.xml" parent="/*">
+				<uses-permission android:name="android.permission.SEND_SMS" />
+				<uses-permission android:name="android.permission.RECEIVE_SMS" />
+			</config-file>
+		
 			<source-file src="src/android/org/apache/cordova/plugin/SmsPlugin.java" target-dir="src/org/apache/cordova/plugin"/>
 			<source-file src="src/android/org/apache/cordova/plugin/SmsReceiver.java" target-dir="src/org/apache/cordova/plugin"/>
 			<source-file src="src/android/org/apache/cordova/plugin/SmsSender.java" target-dir="src/org/apache/cordova/plugin"/>
