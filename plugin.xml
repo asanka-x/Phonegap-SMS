@@ -3,6 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
 		id="org.apache.cordova.plugin" 
 		version="0.1.0">
+		
         <name>SMSPlugin</name>
         <description>Cordova SMS Plugin to Send and Receive SMS</description>
         <license>MIT</license>
