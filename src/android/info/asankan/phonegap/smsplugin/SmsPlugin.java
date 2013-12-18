@@ -1,4 +1,4 @@
-package org.apache.cordova.smsplugin;
+package info.asankan.phonegap.smsplugin;
 
 import android.app.Activity;
 import android.content.IntentFilter;
