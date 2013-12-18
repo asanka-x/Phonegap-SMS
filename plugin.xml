@@ -10,6 +10,10 @@
         <keywords>cordova,sms</keywords>
         <repo>https://github.com/asanka-x/Phonegap-SMS.git</repo>
 		
+		<engines>
+			<engine name="cordova" version="3.1.0" />
+		</engines>
+		
 		<js-module src="www/smsplugin.js" name="smsplugin">
             <clobbers target="smsplugin" />
         </js-module>
