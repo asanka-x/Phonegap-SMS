@@ -1,4 +1,4 @@
-package org.apache.cordova.plugin;
+package org.apache.cordova.smsplugin;
 
 import android.app.Activity;
 import android.app.PendingIntent;
