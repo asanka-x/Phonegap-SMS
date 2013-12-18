@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-            id="org.apache.cordova.plugin.SmsPlugin" version="0.1.0">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+		id="org.apache.cordova.plugin" 
+		version="0.1.0">
         <name>SMSPlugin</name>
         <description>Cordova SMS Plugin to Send and Receive SMS</description>
         <license>MIT</license>
         <keywords>cordova,sms</keywords>
-        <js-module src="www/smsplugin.js" name="smsplugin">
+        <repo>https://github.com/asanka-x/Phonegap-SMS.git</repo>
+		
+		<js-module src="www/smsplugin.js" name="smsplugin">
             <clobbers target="smsplugin" />
         </js-module>
-
+		
+		<!-- android -->
 		<platform name="android">
 			<config-file target="res/xml/config.xml" parent="/*">
 				<feature name="SMSPlugin">
