@@ -2,7 +2,7 @@
     <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
 		id="info.asankan.phonegap.smsplugin" 
-		version="0.1.0">
+		version="0.2.0">
 		
         <name>SMSPlugin</name>
         <description>Cordova SMS Plugin to Send and Receive SMS</description>
@@ -11,7 +11,7 @@
         <repo>https://github.com/asanka-x/Phonegap-SMS.git</repo>
 		
 		<engines>
-			<engine name="cordova" version="3.1.0" />
+			<engine name="cordova" version=">=2.9.0" />
 		</engines>
 		
 		<js-module src="www/smsplugin.js" name="smsplugin">
