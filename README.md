@@ -13,8 +13,11 @@
 
 #### Installation
 
-  
-
+    phonegap plugin add https://github.com/asanka-x/Phonegap-SMS.git
+    
+    or
+    
+    cordova plugin add https://github.com/asanka-x/Phonegap-SMS.git
 
 
 
