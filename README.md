@@ -4,13 +4,16 @@
 
 ### Supported Features
 
-1. Send SMS
-2. Check SMS feature availability
-3. Start Receiving SMSs
-4. Stop Receiving SMSs
-
+- Send SMS
+- Check SMS feature availability
+- Start Receiving SMSs
+- Stop Receiving SMSs
 
 ### Usage
+
+#### Installation
+
+  
 
 
 
