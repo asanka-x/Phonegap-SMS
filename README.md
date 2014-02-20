@@ -19,7 +19,7 @@
 
     phonegap plugin add https://github.com/asanka-x/Phonegap-SMS.git
     
-                               __or__
+__or__
     
     cordova plugin add https://github.com/asanka-x/Phonegap-SMS.git
     
