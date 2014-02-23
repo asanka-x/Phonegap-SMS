@@ -9,15 +9,9 @@
         <license>MIT</license>
         <keywords>cordova,sms</keywords>
         <repo>https://github.com/asanka-x/Phonegap-SMS.git</repo>
-		
-		<engines>
-			<engine name="cordova" version=">=2.9.0" />
-		</engines>
-		
 		<js-module src="www/smsplugin.js" name="smsplugin">
             <clobbers target="smsplugin" />
         </js-module>
-		
 		<!-- android -->
 		<platform name="android">
 			<config-file target="res/xml/config.xml" parent="/*">

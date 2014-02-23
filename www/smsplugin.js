@@ -1,31 +1,22 @@
-var SmsPlugin = function () {};
+var argscheck = require('cordova/argscheck'),
+    exec = require('cordova/exec');
 
-SmsPlugin.prototype.send = function (phone, message, method, successCallback, failureCallback) {    
-    return cordova.exec(successCallback, failureCallback, 'SmsPlugin', "SEND_SMS", [phone, message, method]);
-};
-
+var smsplugin = {
+send:function (phone, message, method, successCallback, failureCallback) {    
+    exec(successCallback, failureCallback, 'SmsPlugin', 'SEND_SMS', [phone, message, method]);
+},
 //Check if the device has a possibility to send and receive SMS
-SmsPlugin.prototype.isSupported = function(successCallback,failureCallback) {
-    return cordova.exec(successCallback, failureCallback, 'SmsPlugin', 'HAS_SMS_POSSIBILITY', []);
-};
-
+isSupported:function(successCallback,failureCallback) {
+    exec(successCallback, failureCallback, 'SmsPlugin', 'HAS_SMS_POSSIBILITY', []);
+},
 //Start receiving sms, and the successCallback function receives one string as parameter formatted such as [phonenumber]>[message]
-SmsPlugin.prototype.startReception = function(successCallback,failureCallback) {
-    return cordova.exec(successCallback, failureCallback, 'SmsPlugin', 'RECEIVE_SMS', []);
-};
-
+startReception:function(successCallback,failureCallback) {
+    exec(successCallback, failureCallback, 'SmsPlugin', 'RECEIVE_SMS', []);
+},
 //Stop receiving sms
-SmsPlugin.prototype.stopReception = function(successCallback,failureCallback) {
-    return cordova.exec(successCallback, failureCallback, 'SmsPlugin', 'STOP_RECEIVE_SMS', []);
+stopReception:function(successCallback,failureCallback) {
+    exec(successCallback, failureCallback, 'SmsPlugin', 'STOP_RECEIVE_SMS', []);
+}
 };
 
-SmsPlugin.install=function(){
-    if(!window.plugins){
-        window.plugins={};
-    }
-
-    window.plugins.sms= new SmsPlugin();
-    return window.plugins.sms;
-};
-
-cordova.addConstructor(SmsPlugin.install);
+module.exports=smsplugin;
