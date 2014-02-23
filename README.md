@@ -22,6 +22,10 @@
 __or__
     
     cordova plugin add https://github.com/asanka-x/Phonegap-SMS.git
+	
+#### Require the plugin module
+
+	var smsplugin = cordova.require("info.asankan.phonegap.smsplugin.smsplugin");
     
 #### Methods
 
