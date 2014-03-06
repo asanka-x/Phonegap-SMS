@@ -31,11 +31,19 @@ __or__
 
 __send__
 
+	smsplugin.send(number,message,successCallback(result),failureCallback(error));
+
 __isSupported__
+
+	smsplugin.isSupported(successCallback(result),failureCallback(error));
 
 __startReception__
 
+	smsplugin.startReception(successCallback(result),failureCallback(error));
+
 __stopReception__
+	
+	smsplugin.stopReception(successCallback(result),failureCallback(error));
 
 
 
