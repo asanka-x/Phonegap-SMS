@@ -15,7 +15,7 @@
 		<!-- android -->
 		<platform name="android">
 			<config-file target="res/xml/config.xml" parent="/*">
-				<feature name="SMSPlugin">
+				<feature name="SmsPlugin">
 					<param name="android-package" value="info.asankan.phonegap.smsplugin.SmsPlugin" />
 				</feature>
 			</config-file>
