@@ -1,0 +1,33 @@
+{
+  "name": "SMSPlugin",
+  "version": "0.2.0",
+  "description": "Cordova SMS Plugin to Send and Receive SMS",
+  "cordova": {
+    "id": "info.asankan.phonegap.smsplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asanka-x/Phonegap-SMS.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": {
+    "name": "asanka-x"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asanka-x/Phonegap-SMS/issues"
+  },
+  "homepage": "https://github.com/asanka-x/Phonegap-SMS#readme"
+}
